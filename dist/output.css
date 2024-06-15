@@ -605,6 +605,10 @@ html {
   position: sticky;
 }
 
+.left-0{
+  left: 0px;
+}
+
 .right-0{
   right: 0px;
 }
@@ -613,16 +617,12 @@ html {
   top: 0px;
 }
 
-.top-full{
-  top: 100%;
-}
-
-.left-0{
-  left: 0px;
-}
-
 .top-\[62px\]{
   top: 62px;
+}
+
+.top-full{
+  top: 100%;
 }
 
 .my-auto{
@@ -658,8 +658,16 @@ html {
   height: 0.25rem;
 }
 
+.h-\[calc\(100vh-200px\)\]{
+  height: calc(100vh - 200px);
+}
+
 .h-full{
   height: 100%;
+}
+
+.min-h-\[400px\]{
+  min-height: 400px;
 }
 
 .w-8{
@@ -698,6 +706,10 @@ html {
 
 .cursor-pointer{
   cursor: pointer;
+}
+
+.flex-col{
+  flex-direction: column;
 }
 
 .items-center{
@@ -747,8 +759,20 @@ html {
   background-color: rgb(228 228 231 / var(--tw-bg-opacity));
 }
 
+.bg-\[url\(\'\.\/assets\/images\/hero\.jpg\'\)\]{
+  background-image: url('./assets/images/hero.jpg');
+}
+
 .bg-gradient-to-r{
   background-image: linear-gradient(to right, var(--tw-gradient-stops));
+}
+
+.bg-\[url\(\'src\/assets\/images\/hero\.jpg\'\)\]{
+  background-image: url('src/assets/images/hero.jpg');
+}
+
+.bg-\[url\(\'\/src\/assets\/images\/hero\.jpg\'\)\]{
+  background-image: url('/src/assets/images/hero.jpg');
 }
 
 .from-rose-500{
@@ -759,6 +783,18 @@ html {
 
 .to-pink-500{
   --tw-gradient-to: #ec4899 var(--tw-gradient-to-position);
+}
+
+.bg-cover{
+  background-size: cover;
+}
+
+.bg-fixed{
+  background-attachment: fixed;
+}
+
+.bg-center{
+  background-position: center;
 }
 
 .p-2{
@@ -827,14 +863,14 @@ html {
   filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
 }
 
-.transition-colors{
-  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke;
+.transition-all{
+  transition-property: all;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 150ms;
 }
 
-.transition-all{
-  transition-property: all;
+.transition-colors{
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 150ms;
 }
@@ -843,12 +879,12 @@ html {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.hover\:bg-white\/5:hover{
-  background-color: rgb(255 255 255 / 0.05);
-}
-
 .hover\:bg-white\/10:hover{
   background-color: rgb(255 255 255 / 0.1);
+}
+
+.hover\:bg-white\/5:hover{
+  background-color: rgb(255 255 255 / 0.05);
 }
 
 .hover\:text-zinc-200:hover{
@@ -858,15 +894,6 @@ html {
 
 .group:hover .group-hover\:block{
   display: block;
-}
-
-.peer:hover ~ .peer-hover\:bg-black{
-  --tw-bg-opacity: 1;
-  background-color: rgb(0 0 0 / var(--tw-bg-opacity));
-}
-
-.peer:hover ~ .peer-hover\:to-black{
-  --tw-gradient-to: #000 var(--tw-gradient-to-position);
 }
 
 .group.open .group-open\:-top-2{
@@ -881,13 +908,13 @@ html {
   display: block;
 }
 
-.group.open .group-open\:rotate-45{
-  --tw-rotate: 45deg;
+.group.open .group-open\:-rotate-45{
+  --tw-rotate: -45deg;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
-.group.open .group-open\:-rotate-45{
-  --tw-rotate: -45deg;
+.group.open .group-open\:rotate-45{
+  --tw-rotate: 45deg;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 

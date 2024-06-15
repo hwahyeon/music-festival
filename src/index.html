@@ -32,7 +32,7 @@
     <main>
       <header class="text-zinc-200">
         <nav
-          class="sticky flex top-0 bg-gradient-to-r from-rose-500 to-pink-500"
+          class="sticky flex top-0 z-10 bg-gradient-to-r from-rose-500 to-pink-500"
         >
           <div class="flex items-center gap-2 p-2">
             <img src="./assets/images/logo-inverted.png" width="50" />
@@ -125,7 +125,8 @@
 
         <!-- Hero section -->
         <div
-          class="bg-[url('/src/assets/images/hero.jpg')] bg-cover bg-center bg-fixed flex flex-col items-center justify-center h-[calc(100vh-200px)] min-h-[400px]"
+          style="background-image: url('./assets/images/hero.jpg')"
+          class="flex h-[calc(100vh-200px)] min-h-[400px] flex-col items-center justify-center bg-cover bg-fixed bg-center"
         >
           <div
             class="rounded-xl bg-white/30 px-4 py-2 text-center backdrop-blur-md"
@@ -254,6 +255,7 @@
               <h6>1st July 9pm - Main Stage</h6>
             </div>
           </div>
+        </div>
       </div>
     </main>
   </body>

@@ -6,6 +6,18 @@
     <link href="../dist/output.css" rel="stylesheet" />
     <script defer src="./assets/fontawesome/js/fontawesome.min.js"></script>
     <script defer src="./assets/fontawesome/js/solid.min.js"></script>
+    <script>
+      window.onload = () => {
+        const mobileMenuIcon = document.getElementById("mobile-menu-button");
+        mobileMenuIcon.addEventListener("click", () => {
+          if (mobileMenuIcon.classList.contains("open")) {
+            mobileMenuIcon.classList.remove("open");
+          } else {
+            mobileMenuIcon.classList.add("open");
+          }
+        });
+      };
+    </script>
   </head>
   <body>
     <main>
@@ -19,7 +31,21 @@
               tw:<span class="text-sky-900">mf</span>
             </div>
           </div>
-          <div class="flex flex-1 items-center justify-end">
+          <div class="block md:hidden ml-auto pr-4 my-auto cursor-pointer">
+            <button id="mobile-menu-button" class="group">
+              <div
+                class="top-0 w-8 bg-zinc-200 rounded-full h-1 group-open:rotate-45 transition-all group-open:top-2 relative"
+              ></div>
+              <div
+                class="w-8 bg-zinc-200 rounded-full h-1 mt-1 opacity-100 group-open:opacity-0 transition-all"
+              ></div>
+              <div
+                class="top-0 w-8 bg-zinc-200 rounded-full h-1 mt-1 group-open:-rotate-45 transition-all group-open:-top-2 relative"
+              ></div>
+            </button>
+          </div>
+
+          <div class="md:flex hidden flex-1 items-center justify-end">
             <div class="menu-item">
               <span>Home</span>
             </div>
